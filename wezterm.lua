@@ -4,9 +4,9 @@ local constants = require("constants")
 local commands = require("commands")
 
 --Font Setting
-config.font_size = 10.9
+config.font_size = 10.3
 config.line_height = 1
-config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
+config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Regular" })
 
 --Colors
 config.colors = {
@@ -20,13 +20,13 @@ config.hide_tab_bar_if_only_one_tab = true
 -- config.enable_wayland = true
 -- config.window_background_image = constants.bg_images
 config.kde_window_background_blur = true
-config.text_background_opacity = 1.0
+config.text_background_opacity = 1
 -- -- WALLPAPER
 config.background = {
   --buat gambar
   {
     source = { File = constants.bg_images },
-    opacity = 1,      -- wallpaper transparan
+    opacity = 0.9,    -- wallpaper transparan
     hsb = {
       brightness = 1, -- wallpaper jadi gelap 12%
       saturation = 1,
@@ -37,15 +37,15 @@ config.background = {
   {
     source = {
       Gradient = {
-        colors = { "#0C0C0C", "#0C0C0C" }, -- hitam 80%
+        colors = { "#151515", "#151515" }, -- hitam 80%
         -- colors = { "#393E46", "#393E46" }, -- hitam 80%
       },
     },
     width = "100%",
     height = "100%",
-    opacity = 0.8,      -- semakin besar semakin gelap
+    opacity = 0.6,    -- semakin besar semakin gelap
     hsb = {
-      brightness = 0.5, -- wallpaper jadi gelap 12%
+      brightness = 1, -- wallpaper jadi gelap 12%
       saturation = 1,
     },
   },
